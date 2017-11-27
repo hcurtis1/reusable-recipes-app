@@ -1,6 +1,6 @@
-===
+============
 Recipes Blog
-===
+============
 
 Recipes blog is a reusable app for Django. 
 
