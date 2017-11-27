@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-exclude recipes_blog *.pyc
+recursive-include recipes_blog *.css
+recursive-include recipes_blog *.html
+recursive-include recipes_blog *.py

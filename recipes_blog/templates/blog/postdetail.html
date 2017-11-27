@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="row">
+            <div class="col-md-10 col-sm-9">
+            <h3>{{ post.title }}</h3>
+            <div class="row">
+                <div class="col-xs-9 deet-div">
+                    {% if post.image %}
+                        <img src="/media/{{ post.image}}">
+                    {% endif %}
+                    <p><strong>Serves: </strong>{{ post.serves }} | <strong>Cooking Time: </strong>
+                        {{ post.cooking_time }} | <strong>Difficulty: </strong>{{ post.difficulty }} |
+                        <strong>Dietary Info: </strong>{{ post.diet_info }}</p>
+                    <p>{{ post.ingredients }}</p>
+                    <p>{{ post.method }}</p>
+                    <p><button class="btn btn-default" onclick="location.href='/blog'">Back To Blog</button></p>
+                    <p>Published: {{ post.published_date }} | <strong>Views: </strong>{{ post.views }} |
+                        <strong>Tags: </strong>{{ post.tag }}</p>
+                    <p>{% load disqus_tags %} {% set_disqus_title post.title %} {% disqus_show_comments %}</p>
+                </div>
+            </div>
+        </div>
+        </div>
+{% endblock %}
