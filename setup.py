@@ -11,7 +11,6 @@ setup(
 	version='1.0.0',
 	packages=['recipes_blog'],
 	include_package_data=True,
-	license=none,
 	description='A django app for to create recipe blogs',
 	long_description=README,
 	url='https://github.com/hcurtis1',
