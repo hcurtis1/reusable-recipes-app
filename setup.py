@@ -14,9 +14,9 @@ setup(
 	license=none,
 	description='A django app for to create recipe blogs',
 	long_description=README,
-	url='https://github.com/hcurtis1'
-	author='Henry Curtis'
-	author_email='hcuk106@gmail.com'
+	url='https://github.com/hcurtis1',
+	author='Henry Curtis',
+	author_email='hcuk106@gmail.com',
 	classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
