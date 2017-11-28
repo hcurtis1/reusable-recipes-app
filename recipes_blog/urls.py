@@ -1,5 +1,5 @@
 from django.conf.urls import url
-import views
+from recipes_blog import views
 
 urlpatterns = [
     url(r'^$', views.post_lists),
