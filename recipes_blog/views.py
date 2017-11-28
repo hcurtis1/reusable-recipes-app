@@ -9,11 +9,11 @@ from .models import Post
 
 def post_lists(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-    return render(request, "recipes_blog/templates/blog/posts.html", {'posts': posts})
+    return render(request, "posts.html", {'posts': posts})
 
 
 def post_detail(request, id):
     post = get_object_or_404(Post, pk=id)
     post.views += 1
     post.save()
-    return render(request, "recipes_blog/templates/blog/postdetail.html", {'post': post})
+    return render(request, "postdetail.html", {'post': post})
